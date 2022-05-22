@@ -31,7 +31,7 @@ namespace monitorServer
                 {
                     ASCIIEncoding asen = new ASCIIEncoding();
                     SocketClip.Send(asen.GetBytes(Console.ReadLine()));
-                    byte[] Log_byte = new byte[999999999];
+                    byte[] Log_byte = new byte[9000000];
                     int k = SocketClip.Receive(Log_byte);
                     string Log = "";
                     for (int i = 0; i < k; i++)
